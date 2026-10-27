@@ -1,9 +1,145 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [5.17.2] - 2026-10-13
+
+### New Methods (20)
+
+- `get_option_asset_info`
+- `get_pay_info`
+- `get_trade_info_for_analysis`
+- `get_portfolio_margin`
+- `get_total_members_assets`
+- `list_earn_auto_savings`
+- `edit_earn_auto_savings`
+- `ins_loan_coin_delta_amount`
+- `ins_loan_delay_liq_status`
+- `get_position_symbol_info`
+- `query_fixed_available_inventory`
+- `account_fixed_borrow`
+- `query_fixed_borrow_contracts`
+- `query_fixed_borrow_orders`
+- `query_fixed_borrow_market`
+- `renew_fixed_borrow`
+- `get_spot_margin_trade_flexible_available_inventory`
+- `query_borrow_liability`
+- `get_spread_max_qty`
+- `query_referral_code`
+
+### New Endpoint Keys (20)
+
+- `Account.GET_OPTION_ASSET_INFO`
+- `Account.GET_PAY_INFO`
+- `Account.GET_TRADE_INFO_FOR_ANALYSIS`
+- `Asset.GET_PORTFOLIO_MARGIN`
+- `Asset.GET_TOTAL_MEMBERS_ASSETS`
+- `Earn.LIST_EARN_AUTO_SAVINGS`
+- `Earn.EDIT_EARN_AUTO_SAVINGS`
+- `InstitutionalLoan.INS_LOAN_COIN_DELTA_AMOUNT`
+- `InstitutionalLoan.INS_LOAN_DELAY_LIQ_STATUS`
+- `Position.GET_POSITION_SYMBOL_INFO`
+- `SpotMarginTrade.QUERY_FIXED_AVAILABLE_INVENTORY`
+- `SpotMarginTrade.ACCOUNT_FIXED_BORROW`
+- `SpotMarginTrade.QUERY_FIXED_BORROW_CONTRACTS`
+- `SpotMarginTrade.QUERY_FIXED_BORROW_ORDERS`
+- `SpotMarginTrade.QUERY_FIXED_BORROW_MARKET`
+- `SpotMarginTrade.RENEW_FIXED_BORROW`
+- `SpotMarginTrade.GET_SPOT_MARGIN_TRADE_FLEXIBLE_AVAILABLE_INVENTORY`
+- `SpotMarginTrade.QUERY_BORROW_LIABILITY`
+- `Spread.GET_SPREAD_MAX_QTY`
+- `User.QUERY_REFERRAL_CODE`
+
+### Fixed
+
+- Serialize GET list parameters as repeated query keys so signatures match the
+  transmitted URL.
+- Correct new endpoint documentation links and parameter descriptions.
+
+## [5.17.1] - 2026-09-30
+
+### New Methods (40)
+
+- `get_option_base_coins`
+- `get_crypto_loan_fixed_available_inventory`
+- `get_crypto_loan_flexible_available_inventory`
+- `close_dca_bot`
+- `create_dca_bot`
+- `close_combo_bot`
+- `create_combo_bot`
+- `get_combo_detail`
+- `get_combo_limit`
+- `close_f_grid_bot`
+- `create_f_grid_bot`
+- `get_f_grid_detail`
+- `validate_f_grid_input`
+- `batch_create_tax_reports`
+- `batch_query_tax_reports`
+- `close_f_mart_bot`
+- `create_f_mart_bot`
+- `get_f_mart_detail`
+- `get_f_mart_limit`
+- `close_grid_bot`
+- `create_grid_bot`
+- `query_grid_detail`
+- `validate_grid_input`
+- `get_convert_detail`
+- `get_convert_list`
+- `submit_convert`
+- `get_multiplier_list`
+- `get_market_session`
+- `place_stocks_order`
+- `cancel_stocks_order`
+- `get_stocks_order_detail`
+- `get_stocks_positions`
+- `create_strategy`
+- `create_chase_order_strategy`
+- `create_twap_strategy`
+- `create_iceberg_strategy`
+- `create_pov_strategy`
+- `query_strategy_list`
+- `query_strategy_order_list`
+- `stop_strategy`
+
+### New Endpoint Keys (37)
+
+- `Market.GET_OPTION_BASE_COINS`
+- `CryptoLoan.GET_CRYPTO_LOAN_FIXED_AVAILABLE_INVENTORY`
+- `CryptoLoan.GET_CRYPTO_LOAN_FLEXIBLE_AVAILABLE_INVENTORY`
+- `DCA.CLOSE_DCA_BOT`
+- `DCA.CREATE_DCA_BOT`
+- `FComboBot.CLOSE_COMBO_BOT`
+- `FComboBot.CREATE_COMBO_BOT`
+- `FComboBot.GET_COMBO_DETAIL`
+- `FComboBot.GET_COMBO_LIMIT`
+- `FGridBot.CLOSE_F_GRID_BOT`
+- `FGridBot.CREATE_F_GRID_BOT`
+- `FGridBot.GET_F_GRID_DETAIL`
+- `FGridBot.VALIDATE_F_GRID_INPUT`
+- `FHT.BATCH_CREATE_TAX_REPORTS`
+- `FHT.BATCH_QUERY_TAX_REPORTS`
+- `FMartingaleBot.CLOSE_F_MART_BOT`
+- `FMartingaleBot.CREATE_F_MART_BOT`
+- `FMartingaleBot.GET_F_MART_DETAIL`
+- `FMartingaleBot.GET_F_MART_LIMIT`
+- `Grid.CLOSE_GRID_BOT`
+- `Grid.CREATE_GRID_BOT`
+- `Grid.QUERY_GRID_DETAIL`
+- `Grid.VALIDATE_GRID_INPUT`
+- `RWA.GET_CONVERT_DETAIL`
+- `RWA.GET_CONVERT_LIST`
+- `RWA.SUBMIT_CONVERT`
+- `RWA.GET_MULTIPLIER_LIST`
+- `RWA.GET_MARKET_SESSION`
+- `RWA.PLACE_STOCKS_ORDER`
+- `RWA.CANCEL_STOCKS_ORDER`
+- `RWA.GET_STOCKS_ORDER_DETAIL`
+- `RWA.GET_STOCKS_POSITIONS`
+- `Strategy.CREATE_STRATEGY`
+- `Strategy.CREATE_CHASE_ORDER_STRATEGY`
+- `Strategy.QUERY_STRATEGY_LIST`
+- `Strategy.QUERY_STRATEGY_ORDER_LIST`
+- `Strategy.STOP_STRATEGY`
+
 
 ## [5.17.0] - 2026-07-08
 
